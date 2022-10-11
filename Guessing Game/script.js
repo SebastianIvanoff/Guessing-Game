@@ -8,9 +8,9 @@ function checkGuess() {
   } else if (myGuess > random) {
     feedback.textContent =
       "Din gissning var " + myGuess + ". Det är för högt. Försök igen!";
-  } else if (my < random) {
+  } else if (myGuess < random) {
     feedback.textContent =
-      "Din gissning var " + myGuess + ". Det äet är för lågt. Försök igen!";
+      "Din gissning var " + myGuess + ". Det är för lågt. Försök igen!";
   }
 }
 submitGuess.addEventListener("click", checkGuess);
